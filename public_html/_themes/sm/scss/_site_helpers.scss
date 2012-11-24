@@ -1,0 +1,71 @@
+@import "compass/css3/border-radius",
+        "compass/css3/images",
+        "cpb_sass_helpers/cpb",
+        "_vars";
+
+.description {
+  @extend .muted;
+  font-size: 14px;
+  font-style: italic;
+  margin: $neg_space/4 0 $neg_space;
+}
+
+.call-to-action {
+  @include background-image(
+    linear-gradient(
+      top,
+      transparent 12px,
+      $black 12px, black 14px,
+      transparent 14px, transparent 17px,
+      $black 17px, $black 20px,
+      transparent 20px
+    )
+  );
+  background-size: 30px 30px;
+  margin-bottom: $neg_space;
+  text-align: center;
+
+  & a {
+    background: #ffffff;
+    color: $black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 10px 0 36px;
+    position: relative;
+    text-transform: uppercase;
+
+    &:before {
+      @include triangle(down, 20px, 16px, $red);
+      @include v-center(20px);
+      left: 10px;
+    }
+
+    &:after {
+      @include triangle(down, 4px, 16px, $bg_color);
+      @include v-center(20px);
+      left: 10px;
+    }
+  }
+}
+
+.salutation {
+  display: inline-block;
+  font-size: 105%;
+  font-weight: bold;
+  margin-bottom: $neg_space/4;
+}
+
+.ps {
+  @extend .muted;
+
+  display: block;
+  font-size: 90%;
+  padding: 0 $neg_space*0.375;
+}
+
+.signature {
+  @include cb_logo_mark(40px);
+  margin: 0 auto;
+}

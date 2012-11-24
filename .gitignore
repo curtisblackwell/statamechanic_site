@@ -1,0 +1,26 @@
+.DS_Store
+_add-ons
+_app
+*cache*
+_config/users/admin.yaml
+_config/add-ons/*
+.htaccess
+
+downloads
+london-wild
+stage.yaml
+live.yaml
+*.sublime-workspace
+settings.yaml
+
+# -------------
+# STATAMECHANIC
+# -------------
+statamechanic.yaml
+
+
+# ------
+# YEOMAN
+# ------
+temp
+dist

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ _site_name }}</title>
+    <meta name="description" content="{{ if author }}{{ author }}{{ else }}Statamechanic is a collection of tools to quickly and smoothly install and maintain Statamic.{{ endif}}">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="{{ theme:css }}">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <!-- <script src="scripts/vendor/modernizr.min.js"></script> -->
+  </head>
+
+  <body>
+    <header id="header_main">
+      <hgroup><h1 class="visuallyhidden">Statamechanic</h1></hgroup>
+      <a href="{{ _site_url }}" id="logo">
+        <img src="{{ theme:img src="statamechanic-logo.png" }}" alt="Statamechanic Logo" id="logo" width="350" height="48">
+      </a>
+      <p class="description">Statamechanic is a collection of tools to quickly and smoothly install and maintain Statamic.</p>
+    </header>
+
+    <p class="call-to-action"><a href="/downloads/statamechanic.zip">Download</a></p>
+
+    {{ layout_content }}
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script> -->
+
+    <script>
+      var _gaq=[['_setAccount','UA-35746033-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>

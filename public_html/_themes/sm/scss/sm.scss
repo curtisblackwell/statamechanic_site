@@ -1,0 +1,34 @@
+@import "compass_twitter_bootstrap",
+        "_site_helpers";
+
+body {
+  font: $d_font_size "Helvetica" sans-serif;
+  line-height: $d_line_height;
+  margin: $neg_space auto 0;
+  width: $site_width;
+}
+
+p { margin-bottom: $neg_space/2; }
+
+a {
+  color: $red;
+
+  &:hover {
+    color: $red;
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border-color: $black;
+  border-style: solid;
+  border-bottom-width: 3px;
+  border-top-width: 2px;
+  margin-bottom: $neg_space;
+  padding-top: 3px;
+}
+
+#header_main {
+  #logo { display: block; }
+  .description { margin-bottom: $neg_space; }
+}
