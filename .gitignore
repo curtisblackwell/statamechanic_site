@@ -9,7 +9,7 @@ _config/add-ons/*
 downloads
 london-wild
 stage.yaml
-live.yaml
+/live.yaml
 *.sublime-workspace
 settings.yaml
 
