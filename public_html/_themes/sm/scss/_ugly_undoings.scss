@@ -1,0 +1,11 @@
+.navbar {
+  .navbar-inner { padding: 0; }
+
+  .nav .dropdown.open > .dropdown-toggle,
+  .nav li.dropdown.active > .dropdown-toggle:hover { color: $gray; }
+
+  .nav .dropdown .active > a {
+    background-color: $red;
+    color: $white;
+  }
+}

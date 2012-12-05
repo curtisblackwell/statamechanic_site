@@ -1,53 +1,153 @@
 @import "compass/css3/border-radius",
         "compass/css3/images",
         "cpb_sass_helpers/cpb",
-        "_vars";
+        "forms",
+        "code",
+        "ugly_undoings";
 
-.description {
-  @extend .muted;
-  font-size: 14px;
-  font-style: italic;
-  margin: $neg_space/4 0 $neg_space;
+#logo { max-height: 50px; }
+
+// STRUCTURE
+// --------------------------------------------------
+
+// Navbar
+// -------------------------
+.navbar { margin-bottom: $neg_space; }
+
+.nav > .dropdown > .dropdown-toggle {
+  padding-right: 15px;
+  position: relative;
+
+  &:before {
+    @include triangle(down, 8px, 8px, $grayLight);
+    @include v-center(12px);
+    right: 0;
+  }
+
+  &:after {
+    @include triangle(down, 8px, 2px, $white);
+    @include v-center(12px);
+    right: 0;
+  }
 }
 
-.call-to-action {
-  @include background-image(
-    linear-gradient(
-      top,
-      transparent 12px,
-      $black 12px, black 14px,
-      transparent 14px, transparent 17px,
-      $black 17px, $black 20px,
-      transparent 20px
-    )
-  );
-  background-size: 30px 30px;
-  margin-bottom: $neg_space;
-  text-align: center;
+.dropdown      .dropdown-toggle:hover:before { border-top-color: $gray; }
+.dropdown.open .dropdown-toggle:before       { border-top-color: $red;  }
 
-  & a {
-    background: #ffffff;
-    color: $black;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 200%;
-    font-weight: bold;
-    line-height: 1;
-    padding: 0 10px 0 36px;
+
+// Sidebar
+// -------------------------
+#sidebar {
+  font-size: 90%;
+
+  li li a {
+    padding-right: 30px;
     position: relative;
-    text-transform: uppercase;
 
     &:before {
-      @include triangle(down, 20px, 16px, $red);
-      @include v-center(20px);
-      left: 10px;
+      @include triangle(right, 8px, 8px, $grayLight);
+      @include v-center(8px);
+      right: 15px;
     }
 
     &:after {
-      @include triangle(down, 4px, 16px, $bg_color);
-      @include v-center(20px);
-      left: 10px;
+      @include triangle(right, 2px, 8px, $white);
+      @include v-center(8px);
+      right: 21px; // [right of :before] + [:before triangle width] - [:after triangle width]
     }
   }
+}
+
+
+
+
+// ALERTS
+// --------------------------------------------------
+.alert { @include border-radius(0); }
+
+
+
+
+// BADGES & LABELS
+// --------------------------------------------------
+i.badge-info, i.label-info { font-family: $serifFontFamily; }
+
+
+
+
+// BUTTONS
+// --------------------------------------------------
+.btn-download {
+  padding-left: 30px;
+  position: relative;
+
+  &:before {
+    @include triangle(down, 13px, 16px, $bodyBackground);
+    @include v-center(16px);
+    left: 10px;
+  }
+
+  &:after {
+    @include triangle(down, 13px, 3px, $gray);
+    @include v-center(16px);
+    left: 10px;
+  }
+}
+
+
+
+
+// ENTRIES
+// --------------------------------------------------
+.section {
+  padding: $neg_space 0;
+  &:first-child { margin-top: -$neg_space; }
+}
+.section_header {
+  border-bottom: 1px solid $grayLighter;
+  margin-bottom: $neg_space/2;
+  padding-bottom: $neg_space/4;
+}
+
+.affix {
+  position: fixed;
+  top: 40px;
+}
+
+// Docs
+// -------------------------
+.docs { margin-bottom: 1000px; }
+
+
+
+
+// STYLIZATIONS
+// --------------------------------------------------
+
+// Hero Unit
+// -------------------------
+.hero-unit {
+  @include border-radius(0px);
+  @include background(linear-gradient(bottom left, $grayDark, $red));
+  background-color: $grayDark;
+  margin-bottom: $neg_space;
+  text-align: center;
+
+  a {
+    color: $white;
+    &:hover { color: darken($white, 15%); }
+  }
+}
+
+
+// Letters
+// -------------------------
+.letter {
+  @include single-box-shadow($grayLighter);
+  border: 1px solid $grayLighter;
+  margin: 0 auto;
+  max-width: 370px;
+  padding: $neg_space;
 }
 
 .salutation {
@@ -55,6 +155,11 @@
   font-size: 105%;
   font-weight: bold;
   margin-bottom: $neg_space/4;
+}
+
+.signature {
+  @include cb_logo_mark(40px);
+  margin: $neg_space/2 auto;
 }
 
 .ps {
@@ -65,7 +170,26 @@
   padding: 0 $neg_space*0.375;
 }
 
-.signature {
-  @include cb_logo_mark(40px);
-  margin: 0 auto;
-}
+
+// .description {
+//   @extend .muted;
+//   font-size: 85%;
+//   font-style: italic;
+//   margin: $neg_space/4 0 $neg_space;
+// }
+
+// .call_to_action {
+//   @include background-image(
+//     linear-gradient(
+//       top,
+//       transparent 12px,
+//       $grayDark   12px, $grayDark 14px,
+//       transparent 14px, transparent 17px,
+//       $grayDark   17px, $grayDark 20px,
+//       transparent 20px
+//     )
+//   );
+//   background-size: 30px 30px;
+//   margin-bottom: $neg_space;
+//   text-align: center;
+// }
