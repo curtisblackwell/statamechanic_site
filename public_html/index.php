@@ -1,8 +1,8 @@
 <?php
 /**
  * Statamic
- * 
- * Statamic is a light-weight and flexible, file-based 
+ *
+ * Statamic is a light-weight and flexible, file-based
  * publishing engine, build for devs AND clients.
  *
  * @author Jack McDade (jack@statamic.com)
@@ -11,7 +11,7 @@
  */
 
 ##################################################
-# To run Statamic above webroot, uncomment the 
+# To run Statamic above webroot, uncomment the
 # following line. Make sure to update your
 # public folder setting in your site config.
 
