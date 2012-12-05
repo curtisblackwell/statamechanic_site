@@ -1,13 +1,11 @@
-//
-// Hero unit
-// --------------------------------------------------
-
+// HERO UNIT
+// ---------
 
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
   background-color: $heroUnitBackground;
-  @include border-radius(6px);
+  @include bootstrap-border-radius(6px);
   h1 {
     margin-bottom: 0;
     font-size: 60px;

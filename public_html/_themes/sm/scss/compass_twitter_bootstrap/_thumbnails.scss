@@ -1,15 +1,12 @@
-//
-// Thumbnails
-// --------------------------------------------------
-
-
+// THUMBNAILS
+// ----------
 // Note: `.thumbnails` and `.thumbnails > li` are overriden in responsive files
 
 // Make wrapper ul behave like the grid
 .thumbnails {
   margin-left: -$gridGutterWidth;
   list-style: none;
-  @include clearfix();
+  @include bootstrap-clearfix();
 }
 // Fluid rows have no left margin
 .row-fluid .thumbnails {
@@ -27,16 +24,15 @@
 .thumbnail {
   display: block;
   padding: 4px;
-  line-height: $baseLineHeight;
+  line-height: 1;
   border: 1px solid #ddd;
-  @include border-radius(4px);
-  @include box-shadow(0 1px 1px rgba(0,0,0,.055));
-  @include transition(all .2s ease-in-out);
+  @include bootstrap-border-radius(4px);
+  @include bootstrap-box-shadow(0 1px 1px rgba(0,0,0,.075));
 }
 // Add a hover state for linked versions only
 a.thumbnail:hover {
   border-color: $linkColor;
-  @include box-shadow(0 1px 4px rgba(0,105,214,.25));
+  @include bootstrap-box-shadow(0 1px 4px rgba(0,105,214,.25));
 }
 
 // Images and captions
@@ -48,5 +44,4 @@ a.thumbnail:hover {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: $gray;
 }

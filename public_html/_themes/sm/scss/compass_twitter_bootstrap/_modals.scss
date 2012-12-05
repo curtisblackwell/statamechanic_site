@@ -1,7 +1,5 @@
-//
-// Modals
-// --------------------------------------------------
-
+// MODALS
+// ------
 
 // Recalculate z-index where appropriate
 .modal-open {
@@ -26,7 +24,7 @@
 
 .modal-backdrop,
 .modal-backdrop.fade.in {
-  @include opacity(80);
+  @include bootstrap-opacity(80);
 }
 
 // Base modal
@@ -42,11 +40,11 @@
   border: 1px solid #999;
   border: 1px solid rgba(0,0,0,.3);
   *border: 1px solid #999; /* IE6-7 */
-  @include border-radius(6px);
-  @include box-shadow(0 3px 7px rgba(0,0,0,0.3));
-  @include background-clip(padding-box);
+  @include bootstrap-border-radius(6px);
+  @include bootstrap-box-shadow(0 3px 7px rgba(0,0,0,0.3));
+  @include bootstrap-background-clip(padding-box);
   &.fade {
-    @include transition(#{opacity .3s linear, top .3s ease-out});
+    @include bootstrap-transition('opacity .3s linear, top .3s ease-out');
     top: -25%;
   }
   &.fade.in { top: 50%; }
@@ -56,14 +54,9 @@
   border-bottom: 1px solid #eee;
   // Close icon
   .close { margin-top: 2px; }
-  // Heading
-  h3 {
-    margin: 0;
-    line-height: 30px;
-  }
 }
 
-// Body (where all modal content resides)
+// Body (where all modal content resises)
 .modal-body {
   overflow-y: auto;
   max-height: 400px;
@@ -81,9 +74,9 @@
   text-align: right; // right align buttons
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
-  @include border-radius(0 0 6px 6px);
-  @include box-shadow(inset 0 1px 0 $white);
-  @include clearfix(); // clear it in case folks use .pull-* classes on buttons
+  @include bootstrap-border-radius(0 0 6px 6px);
+  @include bootstrap-box-shadow(inset 0 1px 0 $white);
+  @include bootstrap-clearfix(); // clear it in case folks use .pull-* classes on buttons
 
   // Properly space out buttons
   .btn + .btn {
