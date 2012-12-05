@@ -6,7 +6,7 @@ description: This document describes in detail how to use Statamechanic.
 keywords: docs
 ---
 
-Statamechanic is a collection of tools to quickly and smoothly install and maintain Statamic.
+Statamechanic is a collection of tools to quickly and smoothly install and maintain [Statamic](http://statamic.com/).
 
 <div class="alert alert-danger">Every time you use Statamechanic, before you do anything, backup your site.</div>
 

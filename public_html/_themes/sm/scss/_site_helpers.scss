@@ -71,6 +71,19 @@
 // BADGES & LABELS
 // --------------------------------------------------
 i.badge-info, i.label-info { font-family: $serifFontFamily; }
+.badge-success.whale {
+  position: relative;
+
+  &:before {
+    @include rotate(15deg);
+    @include triangle(left, 12px, 10px, $green);
+    display: block;
+    left: -9px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+}
 
 
 
