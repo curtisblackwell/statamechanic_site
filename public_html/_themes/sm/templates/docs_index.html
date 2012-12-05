@@ -1,0 +1,30 @@
+<div class="span4" id="sidebar" data-spy="affix" data-offset-top="90">
+  {{ theme:partial
+    from ="/"
+    src  ="nav_sidebar"
+  }}
+</div>
+
+<div class="docs span8 pull-right">
+  <article class="section" id="{{ title|lower|slugify }}"> {{# there's no slug GV #}}
+    <header><hgroup><h1>{{ title }}</h1></hgroup></header>
+    {{ content }}
+  </article>
+
+
+  <hr>
+
+
+  {{ entries:listing
+    paginate ="no"
+    sort_by  ="number"
+    sort_dir ="asc"
+  }}
+
+    <article class="section" id="{{ slug }}">
+      <header><hgroup><h2 class="section_header">{{ title }}</h2></hgroup></header>
+      {{ content }}
+    </article>
+
+  {{ /entries:listing }}
+</div>
