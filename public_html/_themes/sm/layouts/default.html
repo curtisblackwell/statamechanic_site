@@ -42,8 +42,9 @@
                   </a>
                   {{if children }}
                     <ul class="dropdown-menu">
-                      <li{{ if is_current || is_parent }} class="active"{{ endif }}><a href="{{ url }}">Index</a></li>
+                      <li><a href="/docs/_statamechanic-1">Statamechanic 1</a></li>
                       <li class="divider"></li>
+                      <li><a href="{{ url }}">Statamechanic 2</a></li>
                       {{ children }}
                         <li{{ if is_current }} class="active"{{ endif }}>
                           <a href="{{ replace find="\/[^\/]+\/?$" regex="yes" }}{{ url }}{{ /replace }}#{{ replace find="[0-9]*\." regex="yes" }}{{ slug }}{{ /replace }}">{{ title }}</a>

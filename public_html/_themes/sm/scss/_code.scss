@@ -1,15 +1,13 @@
-.docs {
-  pre {
-    overflow: auto;
-    white-space: pre;
-    word-wrap: normal;
-  }
-
-  code {
-    color: $grayDark;
-    font-size: $baseFontSize - 2;
-    line-height: 2;
-  }
-
-  li code { white-space: pre; }
+pre {
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
 }
+
+code {
+  color: $grayDark;
+  font-size: $baseFontSize - 2;
+  line-height: 2;
+}
+
+li code { white-space: pre; }

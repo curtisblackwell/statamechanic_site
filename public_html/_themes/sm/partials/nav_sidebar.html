@@ -1,9 +1,10 @@
 <nav>
   <ul class="nav nav-list">
     {{ nav
-      folders_only ="no"
-      from         ="{ from }"
-      max_depth    ="2"
+      folders_only    ="no"
+      from            ="{ from }"
+      include_entries ="yes"
+      max_depth       ="2"
     }}
 
       <li><a href="#{{ slug }}">{{ title }}</a>
