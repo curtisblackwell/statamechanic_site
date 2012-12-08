@@ -1,5 +1,6 @@
 @import "compass/css3/border-radius",
         "compass/css3/images",
+        "compass/layout/sticky-footer",
         "cpb_sass_helpers/cpb",
         "forms",
         "code",
@@ -9,6 +10,25 @@
 
 // STRUCTURE
 // --------------------------------------------------
+
+// Header
+// -------------------------
+#header_main { padding-top: $neg_space; }
+
+
+// Footer
+// -------------------------
+#footer_main {
+  margin: 0 auto;
+
+  p, a, a:hover {
+    color: lighten($grayLight, 20%);
+    font-size: $baseFontSize - 2; // same as small
+  }
+}
+
+#disclaimer { text-align: right; }
+
 
 // Navbar
 // -------------------------
@@ -158,7 +178,7 @@ i.badge-info, i.label-info { font-family: $serifFontFamily; }
 .letter {
   @include single-box-shadow($grayLighter);
   border: 1px solid $grayLighter;
-  margin: 0 auto;
+  margin: 0 auto $neg_space;
   max-width: 370px;
   padding: $neg_space;
 }

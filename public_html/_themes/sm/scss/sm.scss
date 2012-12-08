@@ -1,10 +1,9 @@
 @import "compass_twitter_bootstrap",
         "site_helpers";
 
-body {
-  margin: $neg_space auto;
+@include sticky-footer(36px, "#wrapper", "#push", "#footer_main");
 
-}
+body { margin: 0 auto; }
 
 hr {
   border-color: $grayDark;
