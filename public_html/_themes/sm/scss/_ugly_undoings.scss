@@ -3,6 +3,7 @@
 
   .nav .dropdown.open > .dropdown-toggle,
   .nav li.dropdown.active > .dropdown-toggle:hover { color: $gray; }
+  .nav li a { text-shadow: none; }
 
   .nav .dropdown .active > a {
     background-color: $red;
