@@ -4,11 +4,10 @@ _template: letter
 ---
 
 <span class="salutation">Dear Statamic Community,</span>  
-Statamechanic 2 is on its way. The update will be commercially licensed, but available for free for a limited time.
+Statamechanic 2 Beta is ready and temporarily available for free!
 
-For now, please continue using Statamechanic for free.
+If you run into any snags along the way, please email me at <the@statamechanic.com> for support.
+
+After trying Statamechanic 2 Beta, please fill out this [survey](https://docs.google.com/spreadsheet/embeddedform?formkey=dEI4RVZfblp0bjc0eVptNHNrRllxMFE6MQ).
 
 <a class="signature" href="http://curtisblackwell.com"></a>
-
-<span class="ps">P.S.  
-If you’d like to participate in the private beta for Statamechanic 2, please email <the@statamechanic.com>.</span>
