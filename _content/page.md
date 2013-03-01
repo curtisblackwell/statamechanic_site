@@ -3,11 +3,10 @@ title: Home
 _template: letter
 ---
 
-<span class="salutation">Dear Statamic Community,</span>  
-Statamechanic 2 Beta is ready and temporarily available for free!
+<span class="salutation">Hello (Potential) Statamechanic User,</span>
 
-If you run into any snags along the way, please email me at <the@statamechanic.com> for support.
+If you have any questions or need some help, you can get in contact with me via email at <the@statamechanic.com>.
 
-After trying Statamechanic 2 Beta, please fill out this [survey](https://docs.google.com/spreadsheet/embeddedform?formkey=dEI4RVZfblp0bjc0eVptNHNrRllxMFE6MQ).
+If you have a simple question, you can also ask me on twitter [@Statamechanic](https://twitter.com/statamechanic).
 
 <a class="signature" href="http://curtisblackwell.com"></a>
